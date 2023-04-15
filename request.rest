@@ -2,9 +2,9 @@ POST http://localhost:2001/api/users
 Content-Type: application/json
 
 {
-    "name":"Bob2",
-    "email":"bob2@gmail.com",
-    "password":"bob2"
+    "name":"Bob3",
+    "email":"bob3@gmail.com",
+    "password":"bob3"
 }
 
 ###
@@ -15,3 +15,9 @@ Content-Type: application/json
     "email":"bob@gmail.com",
     "password":"bob"
 }
+
+###
+GET http://localhost:2001/api/users
+Content-Type: application/json
+Authorization: BEARER eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7Im5hbWUiOiIzMGE3NWJjYy0wMmY1LTQ3NDktYWZjMS0wMDQ3YmM4YjE5YzAiLCJlbWFpbCI6IkJvYiIsInBhc3N3b3JkIjoiYm9iQGdtYWlsLmNvbSJ9LCJpYXQiOjE2ODE1OTUzNDcsImV4cCI6MTY4MTU5NTQwN30.HwsEubp4WBNf0cL2oA8xLRpJ5fVFmjosnUk8nqYXpdE
+
