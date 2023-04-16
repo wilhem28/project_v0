@@ -36,6 +36,15 @@ const refrehTokenUser = (req,res) => {
     } catch (error) {
         res.status(500).json({error:error.message});
     }
-}
+};
 
-export default {loginUser,refrehTokenUser};
+const deleteRefreshToken = (req, res) => {
+    try {
+        res.clearCookie('refresh_token');
+        return res.status(200).json({message:'Refreh token deleted'});
+    } catch (error) {
+        res.status(500).json({error:error.message});
+    }
+};
+
+export default {loginUser,refrehTokenUser,deleteRefreshToken};
