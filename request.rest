@@ -2,26 +2,24 @@ POST http://localhost:2001/api/users
 Content-Type: application/json
 
 {
-    "name":"Bob3",
-    "email":"bob3@gmail.com",
-    "password":"bob3"
+    "name":"wim",
+    "email":"wim@gmail.com",
+    "password":"wim"
 }
 
 ###
 GET http://localhost:2001/api/users
 Content-Type: application/json
-Authorization: BEARER eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7Im5hbWUiOiIzMGE3NWJjYy0wMmY1LTQ3NDktYWZjMS0wMDQ3YmM4YjE5YzAiLCJlbWFpbCI6IkJvYiIsInBhc3N3b3JkIjoiYm9iQGdtYWlsLmNvbSJ9LCJpYXQiOjE2ODE2MzAwNTksImV4cCI6MTY4MTYzMDExOX0.vtX6e7q6I5vgaV1BZfo2_ZJEwS3YlltuprfZUlASqpw
+Authorization: BEARER eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7Im5hbWUiOiI4YzQ5YWE1My05MDVjLTQ1Y2UtYTNmMi0wZGI5MjI4YTY0YzAiLCJlbWFpbCI6ImplYW4gbWFyaWUiLCJwYXNzd29yZCI6ImplYW5tYXJpZUBnbWFpbC5jb20ifSwiaWF0IjoxNjgxNjY4NzU4LCJleHAiOjE2ODE2NjkwNTh9.oj6xghF_efcyRkRRArWHPLbANLDx8pRKUTUshIFPjGo
 
 
 ###
 POST http://localhost:2001/api/auth/login
 Content-Type: application/json
-
 {
-    "email":"bob@gmail.com",
-    "password":"bob"
+    "email":"jeanmarie@gmail.com",
+    "password":"jeanmarie"
 }
-
 
 ###
 GET http://localhost:2001/api/auth/refresh_token
