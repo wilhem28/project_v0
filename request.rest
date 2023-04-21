@@ -2,23 +2,27 @@ POST http://localhost:2001/api/users
 Content-Type: application/json
 
 {
-    "name":"wim",
-    "email":"wim@gmail.com",
-    "password":"wim"
+    "name":"y",
+    "email":"y@gmail.com",
+    "password":"y",
+    "privileges":"",
+    "genre":"",
+    "city":""
 }
 
 ###
 GET http://localhost:2001/api/users
 Content-Type: application/json
-Authorization: BEARER eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7Im5hbWUiOiI4YzQ5YWE1My05MDVjLTQ1Y2UtYTNmMi0wZGI5MjI4YTY0YzAiLCJlbWFpbCI6ImplYW4gbWFyaWUiLCJwYXNzd29yZCI6ImplYW5tYXJpZUBnbWFpbC5jb20ifSwiaWF0IjoxNjgxNjY4NzU4LCJleHAiOjE2ODE2NjkwNTh9.oj6xghF_efcyRkRRArWHPLbANLDx8pRKUTUshIFPjGo
+Authorization: BEARER eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7Im5hbWUiOiIzOGFiYzI0OC03MzM5LTQzNTMtYjM4Ni02YzI4NzI1ZTMzOGQiLCJlbWFpbCI6IndpbTQiLCJwYXNzd29yZCI6IndpbTRAZ21haWwuY29tIiwicHJpdmlsZWdlcyI6ZmFsc2UsImdlbnJlIjpudWxsLCJjaXR5IjpudWxsLCJpbWciOm51bGx9LCJpYXQiOjE2ODIxMTAzMDUsImV4cCI6MTY4MjExMDYwNX0.SSOAzGTj-3pmK32UzqR-c_1lEZ1eoLCd37LamcUTy0A
 
 
 ###
 POST http://localhost:2001/api/auth/login
 Content-Type: application/json
+
 {
-    "email":"jeanmarie@gmail.com",
-    "password":"jeanmarie"
+    "email":"wim4@gmail.com",
+    "password":"wim4"
 }
 
 ###

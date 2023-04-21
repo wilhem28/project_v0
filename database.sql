@@ -9,7 +9,7 @@ CREATE TABLE users (
     user_password VARCHAR(255) NOT NULL,
     user_privileges BOOLEAN DEFAULT false,
     user_genre VARCHAR(20) NULL,
-    user_dob DATE NOT NULL DEFAULT CURRENT_DATE,
+    user_dob DATE NULL,
     user_city VARCHAR(60) NULL,
     user_img VARCHAR(100) NULL
 );

@@ -14,17 +14,18 @@ const getUsers = async(req,res) => {
 const createUser = async(req,res) => {
     try {
         const {name,email,password,privileges} = req.body;
-        const newClassUser = new ClassUser(name,email,password,privileges);
+        const profilImg = req.file.filename; 
+        const newClassUser = new ClassUser(name,email,password,privileges,profilImg);
 
         const users = await pool.query(queries.selectUsers);
         if(users.rowCount === 0) {
             const booleanValue = true;
             const hashedPassword = await bcrypt.hash(newClassUser.password,10);
-            const newUser = await pool.query(queries.createAdmin,[newClassUser.name,newClassUser.email,hashedPassword,booleanValue]);
+            const newUser = await pool.query(queries.createAdmin,[newClassUser.name,newClassUser.email,hashedPassword,booleanValue,newClassUser.img]);
             res.json({users:newUser.rows[0]});
         } else {
             const hashedPassword = await bcrypt.hash(newClassUser.password,10);
-            const newUser = await pool.query(queries.createUser,[newClassUser.name,newClassUser.email,hashedPassword]);
+            const newUser = await pool.query(queries.createUser,[newClassUser.name,newClassUser.email,hashedPassword,newClassUser.img]);
             res.json({users:newUser.rows[0]});
         }
     } catch (error) {
