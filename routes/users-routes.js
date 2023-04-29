@@ -6,6 +6,7 @@ import multer from '../middleware/multer-config.js';
 const router = express.Router();
 
 router.get('/',authenticateToken, controllers.getUsers);
+router.get('/:id',authenticateToken,controllers.getUserById);
 router.post('/',multer, controllers.createUser);
 
 export default router;
