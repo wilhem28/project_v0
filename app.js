@@ -7,6 +7,7 @@ import {dirname,join} from 'path';
 import { fileURLToPath } from 'url';
 import usersRouter from './routes/users-routes.js';
 import authRouter from './routes/auth-routes.js';
+import dataUserRouter from './routes/data-users-routes.js';
 
 
 dotenv.config();
@@ -26,5 +27,6 @@ app.use('/', express.static(join(__dirname,'public')));
 
 app.use('/api/users',usersRouter);
 app.use('/api/auth',authRouter);
+app.use('/api/dataUser', dataUserRouter);
 
 export default app;

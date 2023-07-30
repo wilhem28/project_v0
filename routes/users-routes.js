@@ -8,5 +8,7 @@ const router = express.Router();
 router.get('/',authenticateToken, controllers.getUsers);
 router.get('/:id',authenticateToken,controllers.getUserById);
 router.post('/',multer, controllers.createUser);
+router.delete('/:id', controllers.deleteUserById);
+router.put('/:id',multer,controllers.updateUser)
 
 export default router;

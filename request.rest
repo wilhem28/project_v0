@@ -2,9 +2,9 @@ POST http://localhost:2001/api/users
 Content-Type: application/json
 
 {
-    "name":"y",
-    "email":"y@gmail.com",
-    "password":"y",
+    "name":"mic",
+    "email":"mic@gmail.com",
+    "password":"JeanJean8*",
     "privileges":"",
     "genre":"",
     "city":""
@@ -13,7 +13,7 @@ Content-Type: application/json
 ###
 GET http://localhost:2001/api/users
 Content-Type: application/json
-Authorization: BEARER eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7Im5hbWUiOiIzOGFiYzI0OC03MzM5LTQzNTMtYjM4Ni02YzI4NzI1ZTMzOGQiLCJlbWFpbCI6IndpbTQiLCJwYXNzd29yZCI6IndpbTRAZ21haWwuY29tIiwicHJpdmlsZWdlcyI6ZmFsc2UsImltZyI6bnVsbCwiZ2VucmUiOm51bGwsImNpdHkiOm51bGx9LCJpYXQiOjE2ODI3Nzc5MjUsImV4cCI6MTY4Mjc3ODIyNX0.wqbvxS2rehPH_R3h_9gCRNvaLXgWHVyl5P0UW2PmamA
+Authorization: BEARER eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7Im5hbWUiOiJjNjhhZWFlOS02ZGUyLTQ3Y2ItYTBhNS1kOWE4OWJmNzVjMWUiLCJlbWFpbCI6ImplYW4iLCJwYXNzd29yZCI6ImplYW5AZ21haWwuY29tIiwiZ2VucmUiOmZhbHNlLCJkb2IiOm51bGwsImNpdHkiOm51bGwsImltZyI6InBob3RvXzJfKDEpLndlYnAxNjkwMzA5NDI1MTYwLndlYnAifSwiaWF0IjoxNjkwMzEyMzYyLCJleHAiOjE2OTAzMTI2NjJ9.7iUo_j4YyONZO0QQVtTWYcwJLgrATeu6Vh8gusqCbAg
 
 ###
 GET http://localhost:2001/api/users/38abc248-7339-4353-b386-6c28725e338d
@@ -26,8 +26,8 @@ POST http://localhost:2001/api/auth/login
 Content-Type: application/json
 
 {
-    "email":"wim4@gmail.com",
-    "password":"wim4"
+    "email":"jean@gmail.com",
+    "password":"JeanMarie8*"
 }
 
 ###

@@ -55,13 +55,13 @@ ALTER TABLE IF EXISTS public.users
 CREATE TABLE IF NOT EXISTS public.products
 (
     id_product uuid NOT NULL DEFAULT 'uuid_generate_v4()',
-    fk_user uuid NOT NULL,
+    fk_user uuid NULL,
     store_product character varying(50) COLLATE pg_catalog."default" NOT NULL,
     place_product character varying(50) COLLATE pg_catalog."default" NOT NULL,
     branch_product character varying(50) COLLATE pg_catalog."default" NOT NULL,
     brand_product character varying(50) COLLATE pg_catalog."default" NOT NULL,
     range_product character varying(50) COLLATE pg_catalog."default" NOT NULL,
-    type_product character varying(50) COLLATE pg_catalog."default" NOT NULL,
+    type_product character varying(50) COLLATE pg_catalog."default" NULL,
     packaging_product character varying(20) COLLATE pg_catalog."default" NOT NULL,
     volume_product character varying(10) COLLATE pg_catalog."default" NOT NULL,
     quantity_product smallint NOT NULL,
@@ -77,4 +77,3 @@ TABLESPACE pg_default;
 
 ALTER TABLE IF EXISTS public.products
     OWNER to postgres;
-

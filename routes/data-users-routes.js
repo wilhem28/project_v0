@@ -1,15 +1,13 @@
-import pool from '../db.js';
-import queries from '../queries/queries.js';
-import ClassUser from '../classes/class-user.js';
+import express from 'express';
+import controllers from '../controllers/data-user-controllers.js';
+import { authenticateToken } from '../middleware/authorization.js';
+
+const router = express.Router();
+
+router.post('/',authenticateToken, controllers.createDataProduct);
+
+export default router;
 
 
-const createDataProduct = (req,res) => {
-    try {
-        
-    } catch (error) {
-        
-    }
 
-};
 
-export default {createDataProduct}
